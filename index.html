@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="TestApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.angularjs.org/1.0.7/angular.min.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body>
+<div >
+    <div ng-controller="TestCtrl">
+        <div>{{posts}}
+            <form ng-submit="searchSite()">
+                <input type="text" ng-model="siteName" size="30" placeholder="Type site name">
+                <input type="submit" value="info">
+            </form>
+            </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+}
+h1{
+    font: 2em;
+}
+#board > table{
+    margin: 0 auto;
+    width: 192px;
+    height: 192px;
+    border: 2px solid darkgray;
+}
+
+.win-1{    background: url('../img/w1.png');}
+.win-2{    background: url('../img/w2.png');}
+.win-3{    background: url('../img/w3.png');}
+.win-4{    background: url('../img/w4.png');}
+.win-5{    background: url('../img/w5.png');}
+.win-6{    background: url('../img/w6.png');}
+.win-7{    background: url('../img/w7.png');}
+.win-8{    background: url('../img/w8.png');}
+td{
+    width: 64px;
+    height: 64px;
+    border: 1px solid grey;
+}
+td.move-1{
+    background: url('../img/x.png');
+}
+td.move-2{
+    background: url('../img/o.png');
+}
