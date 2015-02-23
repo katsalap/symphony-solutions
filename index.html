@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="TestApp">
+<html ng-app="MyApp">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="https://code.angularjs.org/1.0.7/angular.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>
+    <script src="https://code.angularjs.org/1.2.5/angular-resource.min.js"></script>
     <script type="text/javascript" src="js/search.js"></script>
 </head>
 <body>
 <div >
-    <div ng-controller="TestCtrl">
-        <div>{{posts}}
-            <form ng-submit="searchSite()">
-                <input type="text" ng-model="siteName" size="30" placeholder="Type site name">
-                <input type="submit" value="info">
-            </form>
-            </div>
-    </div>
+    <div ng-controller="PostsCtrl">
+
+<div id="map"></div>
+
+        <ul ng-repeat="post in posts | orderBy: 'Id'">
+
+            <a href="#" ng-click="openInfoWindow($event, $index)"><li>{{post.Title}}</li></a>
+        </ul>
+      </div>
 </div>
 </body>
 </html>

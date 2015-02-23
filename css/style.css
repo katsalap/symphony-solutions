@@ -1,32 +1,26 @@
-body{
-    text-align: center;
+#map {
+    height:600px;
+    width:900px;
 }
-h1{
-    font: 2em;
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
 }
-#board > table{
-    margin: 0 auto;
-    width: 192px;
-    height: 192px;
-    border: 2px solid darkgray;
+h2 {
+    margin-bottom:0;
+    margin-top: 0;
 }
 
-.win-1{    background: url('../img/w1.png');}
-.win-2{    background: url('../img/w2.png');}
-.win-3{    background: url('../img/w3.png');}
-.win-4{    background: url('../img/w4.png');}
-.win-5{    background: url('../img/w5.png');}
-.win-6{    background: url('../img/w6.png');}
-.win-7{    background: url('../img/w7.png');}
-.win-8{    background: url('../img/w8.png');}
-td{
-    width: 64px;
-    height: 64px;
-    border: 1px solid grey;
-}
-td.move-1{
-    background: url('../img/x.png');
-}
-td.move-2{
-    background: url('../img/o.png');
+li{
+    margin: 5px 5px;
+    padding: 10px 10px;
+    float:left;
+    font-weight:300;
+    border-radius:10px;
+    box-shadow: 0px 1px 3px #cccccc;
+    width:210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
