@@ -12,16 +12,17 @@
     <script type="text/javascript" src="js/search.js"></script>
 </head>
 <body>
-<div >
+<div>
     <div class="list" ng-controller="PostsCtrl">
 
-<div id="map"></div>
-
+        <div id="map"></div>
         <ul ng-repeat="post in posts | orderBy: 'Id'">
 
-            <a href="#" ng-click="openInfoWindow($event, $index)"><li>{{post.Title}}</li></a>
+            <a href="#" ng-click="openInfoWindow($event, $index)">
+                <li>{{post.Title}}</li>
+            </a>
         </ul>
-      </div>
+    </div>
 </div>
 </body>
 </html>
