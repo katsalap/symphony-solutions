@@ -1,6 +1,17 @@
+html, body, h2 {
+    font-family: "Open Sans", serif;
+    font-weight:300;
+}
 #map {
-    height:600px;
-    width:900px;
+    height:480px;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+.list{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
 }
 .infoWindowContent {
     font-size:  14px !important;
@@ -9,16 +20,16 @@
 }
 h2 {
     margin-bottom:0;
-    margin-top: 0;
-}
+    font-weight:600;
+  }
 
 li{
     margin: 5px 5px;
     padding: 10px 10px;
     float:left;
     font-weight:300;
-    border-radius:10px;
-    box-shadow: 0px 1px 3px #cccccc;
+    border-radius:3px;
+    box-shadow: 0px 0px 2px #a5a5a5;
     width:210px;
     white-space: nowrap;
     overflow: hidden;
